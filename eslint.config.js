@@ -6,7 +6,7 @@ import configPrettier from "eslint-config-prettier";
 export default [
    {
       languageOptions: {
-         globals: globals.node, // Ensure Node.js global variables are used
+         globals: globals.node,
          sourceType: "module", // Ensure ES Modules are used
       },
    },
@@ -18,8 +18,8 @@ export default [
       rules: {
          ...pluginPrettier.configs.recommended.rules,
          "prettier/prettier": "error",
-         "no-var": "error", // Disallow the use of var
-         "prefer-const": "error", // Prefer const over let if variables are not reassigned
+         "no-var": "error", // Disallow the use of `var`
+         "prefer-const": "error", // Prefer `const` over `let` if variables are not reassigned
       },
    },
    configPrettier, // Ensure this is at the end to override other configurations
