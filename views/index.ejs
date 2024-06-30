@@ -9,13 +9,13 @@
     <p>Welcome to <%= title %></p>
     <h2>These are the latest messages</h2>
     <ul>
-      <% for (let i = 0; i < messages.length; i++) { %>
+      <% messages.forEach(message => { %>
         <li>
-          <div><%= messages[i].user %></div>
-          <div><%= messages[i].text %></div>
-          <div><%= messages[i].added %></div>
+          <div><%= message.user %></div>
+          <div><%= message.text %></div>
+          <div><%= message.added %></div>
         </li>
-      <% } %>
+      <% }); %>
     </ul>
   </body>
 </html>
