@@ -8,8 +8,8 @@
     <h1><%= title %></h1>
     <p>Please add a new message with the following form</p>
     <form method="post" action="/new">
-      <input type="text" placeholder="Author's name"></input>
-      <input type="text" placeholder="Message text"></input>
+      <input type="text" name="user" placeholder="User's name"></input>
+      <input type="text" name="text" placeholder="Message text"></input>
       <button type="submit">Submit</button>
     </form>
   </body>
